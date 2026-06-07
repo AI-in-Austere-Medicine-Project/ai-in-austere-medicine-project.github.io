@@ -718,7 +718,7 @@ footer {
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">Open Source Initiative</div>
+    <div class="hero-eyebrow">AI-AMP // AI in Austere Medicine Project</div>
     <h1 class="hero-title">
       AI<br>
       <span class="dim">for medicine</span><br>
@@ -945,7 +945,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// ── Signup
+// ── Signup — opens Substack with email pre-filled
 function handleSignup() {
   const input = document.querySelector('.signup-input');
   const email = input.value.trim();
@@ -953,9 +953,11 @@ function handleSignup() {
     input.style.borderColor = '#e94560';
     return;
   }
+  const url = 'https://aiamp.substack.com/subscribe?email=' + encodeURIComponent(email);
+  window.open(url, '_blank');
   input.style.borderColor = '#10b981';
   input.value = '';
-  input.placeholder = "✓ You're on the list.";
+  input.placeholder = 'Opening Substack...';
 }
 
 // ── Smooth scroll
