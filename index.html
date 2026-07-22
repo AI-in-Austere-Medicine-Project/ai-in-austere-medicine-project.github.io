@@ -796,50 +796,51 @@ footer {
 <!-- PROJECTS -->
 <section id="projects" style="padding-top: 0;">
   <div class="section-label">What We're Building</div>
-  <h2 class="section-title reveal">Three Projects.<br>One Mission.</h2>
+  <h2 class="section-title reveal">One System.<br>Hybrid by Default.</h2>
   <p class="section-sub reveal reveal-delay-1">
-    Each project pushes the technical limits of what's possible on off-the-shelf hardware in resource-denied environments.
-    Together they form a <strong>living roadmap</strong> — open source evidence that others can build on, adapt, and take further.
-    We don't just build tools. We establish what's possible and show exactly how we got there.
+    EdgeCDSS is one platform, not separate products — a self-hosted edge system that uses cloud
+    inference when the link allows and local inference when it doesn't. Three capability layers
+    at different stages of maturity, developed in the open as a <strong>living roadmap</strong>
+    others can build on, adapt, and take further.
   </p>
   <div class="projects-grid">
     <div class="project-card reveal reveal-delay-1">
-      <div class="project-num">PROJECT 01</div>
-      <div class="project-status"><span class="status-dot"></span> Active — v3.0</div>
+      <div class="project-num">LAYER 01</div>
+      <div class="project-status"><span class="status-dot"></span> Active — v4.0</div>
       <div class="project-name">EdgeCDSS<br>Cloud</div>
-      <div class="project-version">v3.0.0 // Two-Pass Safety Architecture</div>
-      <div class="project-desc">Hybrid cloud-edge clinical decision support. Voice-accessible, protocol-driven guidance in under 3 seconds. All medication dosing resolved to final mL volumes. Two-pass safety validator blocks dangerous responses before they reach the field.</div>
+      <div class="project-version">v4.0.0 // Deterministic-First Architecture</div>
+      <div class="project-desc">The connected layer. Deterministic software owns every computable decision — dosing, contraindications, safety gates — while the LLM handles language only. Two-pass fail-closed validator, source-attributed responses from 89 JTS CPGs, self-hosted on edge hardware.</div>
       <div class="project-tags">
         <span class="tag">FastAPI</span>
         <span class="tag">GPT-4o-mini</span>
         <span class="tag">ChromaDB</span>
-        <span class="tag">GCP</span>
-        <span class="tag">ElevenLabs</span>
+        <span class="tag">Jetson Orin Nano</span>
+        <span class="tag">Cloudflare Tunnel</span>
         <span class="tag">JTS CPGs</span>
       </div>
       <a href="https://github.com/AI-in-Austere-Medicine-Project/pi-cloud-cdss" target="_blank" class="project-link">View on GitHub →</a>
     </div>
     <div class="project-card reveal reveal-delay-2">
-      <div class="project-num">PROJECT 02</div>
+      <div class="project-num">LAYER 02</div>
       <div class="project-status"><span class="status-dot dev"></span> In Development</div>
       <div class="project-name">EdgeCDSS<br>Offline</div>
       <div class="project-version">Summer 2026 // Zero Infrastructure</div>
       <div class="project-desc">Fully offline clinical AI on a $250 edge device. No internet. No cloud. No dependency. Local LLM inference on Jetson Orin Nano. Designed for truly denied environments — conflict zones, remote expeditions, communications blackouts.</div>
       <div class="project-tags">
         <span class="tag">Jetson Orin</span>
-        <span class="tag">Phi-3 / Mistral</span>
-        <span class="tag">Hugging Face</span>
+        <span class="tag">Ollama</span>
+        <span class="tag">3B Models</span>
         <span class="tag">Iridium</span>
         <span class="tag">Solar</span>
       </div>
       <a href="https://github.com/AI-in-Austere-Medicine-Project" target="_blank" class="project-link">Follow Progress →</a>
     </div>
     <div class="project-card reveal reveal-delay-3">
-      <div class="project-num">PROJECT 03</div>
-      <div class="project-status"><span class="status-dot planned"></span> Planned</div>
+      <div class="project-num">LAYER 03</div>
+      <div class="project-status"><span class="status-dot dev"></span> In Development</div>
       <div class="project-name">EdgeCDSS<br>Hybrid</div>
-      <div class="project-version">Coming // Technical Frontier</div>
-      <div class="project-desc">A hybrid of Projects 01 and 02 — pushing the absolute limits of off-the-shelf hardware for denied-comms medical AI. Expanded Iridium satellite integration, LoRa mesh protocols for multi-device field networks, and fully autonomous local inference with opportunistic cloud sync. Built to operate where nothing else does.</div>
+      <div class="project-version">Now Building // Opportunistic Cloud Sync</div>
+      <div class="project-desc">The target state of the platform: one system that routes automatically between cloud and local inference based on link condition. Opportunistic sync, LoRa mesh integration, field-hardened power and comms — in active build ahead of the Tanzania operational field study, August 2026.</div>
       <div class="project-tags">
         <span class="tag">Iridium SBD</span>
         <span class="tag">LoRa Mesh</span>
